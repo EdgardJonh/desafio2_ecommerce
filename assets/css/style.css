@@ -1,0 +1,123 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.contenedor_layout {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 
+    
+    'header header'
+    'menus productos'
+    'footer footer'
+    ;
+
+    min-height: 100vh;  
+    font-family: 'Roboto', sans-serif;
+}
+/* CONTENEDOR HEADER */
+.contenedor_layout_header {
+    grid-area: header;
+    background-color: blue;
+
+}
+.titulo_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.titulo_header p{
+    color: white;
+}
+
+.box {
+    border: 1px solid black;
+}
+/* CONTENEDOR MENU */
+.contenedor_layout_menu {
+    grid-area: menus;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 10%;
+}
+.menu h1{
+    font-size:100%;
+    font-weight: 300;
+}
+.menu ul{
+  list-style: none;
+  margin: 2%;
+  padding: 0;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(131, 131, 131);
+    
+}
+/* CONTENEDOR DE PRODUCTOS Y CARDS */
+.padre_productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.1fr;
+    gap: 3%;
+    margin: 2%;
+    /* min-height: 100vh; */
+}
+.contenedor_layout_productos {
+    /* padding: 4%; */
+    grid-area: productos;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.cards p{
+    margin: 0;
+}
+.cards h1{
+    margin: 0;
+}
+.cards img{
+ width: 80%;
+ border-radius: 10%;
+ border: 2px solid rgb(64, 64, 255);
+}
+.inconos_productos a{
+    color: rgb(160, 160, 160);
+}
+.cards button{
+    width: 85%;
+    margin-top: 1%;
+    border: none;
+    background-color: blue ;
+    color: white;
+    padding: 3%;
+}
+.cards button:hover{
+    background-color: black;
+    color: white;
+}
+
+/* CONTENEDOR FOOTER */
+.contenedor_layout_footer {
+    grid-area: footer;
+    background-color: blue;
+}
+.titulo_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.titulo_footer p{
+    color: white;
+}
+
+/* CONTENEDOR FOOTER */

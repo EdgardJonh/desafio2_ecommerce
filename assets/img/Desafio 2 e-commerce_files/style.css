@@ -1,0 +1,42 @@
+.contenedor_layout {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 
+    
+    'header header'
+    'menus productos'
+    'footer footer'
+    ;
+
+    min-height: 100vh;  
+}
+.contenedor_layout_header {
+    grid-area: header;
+
+}
+.box {
+    border: 1px solid black;
+}
+.contenedor_layout_menu {
+    grid-area: menus;
+}
+/* CONTENEDOR DE PRODUCTOS Y CARDS */
+.padre_productos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3%;
+    margin: 2%;
+}
+.contenedor_layout_productos {
+    grid-area: productos;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+
+}
+.contenedor_layout_footer {
+    grid-area: footer;
+}
