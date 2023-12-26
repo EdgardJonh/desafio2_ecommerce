@@ -1,6 +1,8 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+body{
+    margin: 0;
+}
 .contenedor_layout {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -17,7 +19,7 @@
 /* CONTENEDOR HEADER */
 .contenedor_layout_header {
     grid-area: header;
-    background-color: blue;
+    background-color: #082EAC;
 
 }
 .titulo_header {
@@ -30,12 +32,13 @@
     color: white;
 }
 
-.box {
+/* .box {
     border: 1px solid black;
-}
+} */
 /* CONTENEDOR MENU */
 .contenedor_layout_menu {
     grid-area: menus;
+    background-color: rgb(236, 236, 236);
 }
 
 .menu{
@@ -55,7 +58,7 @@
 }
 .menu ul li a{
     text-decoration: none;
-    color: rgb(131, 131, 131);
+    color: rgb(146, 146, 146);
     
 }
 /* CONTENEDOR DE PRODUCTOS Y CARDS */
@@ -70,6 +73,7 @@
 .contenedor_layout_productos {
     /* padding: 4%; */
     grid-area: productos;
+    background-color: rgb(236, 236, 236);
 }
 
 .cards{
@@ -82,7 +86,10 @@
     margin: 0;
 }
 .cards h1{
-    margin: 0;
+    margin-top: 2%;
+    font-size: medium;
+    color: rgb(59, 59, 59);
+    
 }
 .cards img{
  width: 80%;
@@ -96,8 +103,8 @@
     width: 85%;
     margin-top: 1%;
     border: none;
-    background-color: blue ;
-    color: white;
+    background-color: rgb(16, 87, 138) ;
+    color: rgb(255, 255, 255);
     padding: 3%;
 }
 .cards button:hover{
@@ -108,7 +115,7 @@
 /* CONTENEDOR FOOTER */
 .contenedor_layout_footer {
     grid-area: footer;
-    background-color: blue;
+    background-color: #082EAC;
 }
 .titulo_footer {
     display: flex;
