@@ -70,6 +70,17 @@ body{
     margin: 2%;
     /* min-height: 100vh; */
 }
+@media (max-width: 600px) {
+    .padre_productos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.4fr;
+        gap: 3%;
+        margin: 2%;
+        /* min-height: 100vh; */
+    }
+  }
+
 .contenedor_layout_productos {
     /* padding: 4%; */
     grid-area: productos;
