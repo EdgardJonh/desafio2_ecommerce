@@ -20,6 +20,7 @@ body{
 .contenedor_layout_header {
     grid-area: header;
     background-color: #082EAC;
+   
 
 }
 .titulo_header {
@@ -27,7 +28,9 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
 }
+
 .titulo_header p{
     color: white;
 }
@@ -70,6 +73,15 @@ body{
     margin: 2%;
     /* min-height: 100vh; */
 }
+@media  (max-width: 568px) {
+   .padre_productos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.4fr;
+    gap: 3%;
+    margin: 2%;
+   }
+  }
 .contenedor_layout_productos {
     /* padding: 4%; */
     grid-area: productos;
